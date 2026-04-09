@@ -1,13 +1,13 @@
-# Cap. 1
+# Cap. 1 - Values, Types, and Operators
 
 # Tipos de valores
 
 ### Números
 
 - Pueden ser `integer` (números enteros) o `float` (números con coma flotante).
-- Para números muy grandes se puede poner una `e` (exp.): `2.998e8`  = 2.998 × 10^8.
+- Para números muy grandes se puede poner una `e` (exp.): `2.998e8` =$=2.998\cdot10^8$ .
 - Las operaciones aritméticas siguen el orden de prioridad de los operadores, de haber dos operaciones con el mismo orden de prioridad se realiza de izquierda a derecha.
-- Existe el operador `%` (*remainder* o módulo), es el “resto”, 26 % 5 = 1.
+- Existe el operador `%` (*remainder* o módulo), es el “resto”, $26 \%5 = 1$.
 
 Hay ciertos valores especiales que no tienen comportamiento normal:
 
