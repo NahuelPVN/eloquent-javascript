@@ -124,4 +124,38 @@ while (number <= 20) {
   console.log(number);
   number = number + 1;
 }
+
+```
+Un *statement* que comienza con un `while` es un *loop* (bucle), es seguido por una *expression* entre paréntesis. Mientras esa expresión produzca un valor `true` , el *loop* se va a seguir ejecutando. Los *bindings* pueden ser útiles para llevar cuenta de cuántas veces se ejecutó el programa. 
+
+También existen los loops `do` . La diferencia es que ejecutan el código que contienen al menos una vez, y luego chequea si la condición se cumple para volver a ejecutarlo.
+
+```jsx
+let yourName;
+do {
+	yourName = prompt("What's your name?");
+} while (!yourName);
+console.log(yourName);
+```
+
+Este código te pregunta constantemente tu nombre. Si lo dejas vacío, `yourName` va a ser *falsy*, como el statement dentro del loop debe ser `true` para ejecutarse, mientras que `!yourName` no contenga nada va a tener valor *truthy* y va a seguir preguntando en bucle.
+
+Para evitar tener que usar contadores con los loops `while` y `do` , JavaScript proporciona una solución más fácil, los loops `for` .
+
+```jsx
+for (let number = 0; number <= 20; number = number + 2) {
+	console.log(number);
+}
+```
+
+Formato: `for (variable con la que trabaja; condición de búcle; acción después de iteración)`
+
+Otro ejemplo, código que computa $2^{12}$:
+
+```jsx
+let result = 1;
+for (let i = 0; i < 12; i = i + 1) {
+	result = result * 2;
+}
+console.log(result);
 ```
