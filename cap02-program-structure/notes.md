@@ -148,7 +148,7 @@ for (let number = 0; number <= 20; number = number + 2) {
 }
 ```
 
-Formato: `for (variable con la que trabaja; condición de búcle; acción después de iteración)`
+Formato: `for (variable con la que trabaja; condición de bucle; acción después de iteración)`
 
 Otro ejemplo, código que computa $2^{12}$:
 
@@ -158,4 +158,69 @@ for (let i = 0; i < 12; i = i + 1) {
 	result = result * 2;
 }
 console.log(result);
+```
+### ¿Cómo salir de un bucle?
+
+Además de salir del bucle haciendo que se deje de cumplir la condición de ejecución, se puede forzar la salida con el *statement* `break` .
+
+```jsx
+for (let current = 20; ; current = current + 1) {
+	if (current % 7 == 0) {
+		console.log(current);
+		break;
+	}
+}
+```
+Además, con `continue` el programa saltea el resto del contenido del bucle, y pasa directamente a la siguiente iteración.
+
+En vez de escribir `count = count + 1` se puede `count += 1` (también `-=` ,`*=` , etc.)
+
+Para sumar o restar uno se puede acortar más: `count += 1` y `count -= 1`→ `count ++` y `count--` .
+
+## Cadenas de *if*
+
+Se evitar utilizar una cadena larga de if’s con `switch` , aunque usualmente termina viéndose más ordenado al no usarlo.
+
+```jsx
+switch (prompt("¿How do you feel?")) {
+	case "sad":
+		console.log("Eat something sweet");
+		break;
+	case "happy":
+		console.log("Nice!");
+		break;
+	case "tired":
+		console.log("Get some sleep");
+		break;
+	default:
+		console.log("Unknown mood");
+		break;
+}
+```
+
+Sin los break, aunque cumpla la condición de un caso igualmente prueba con el siguiente.
+
+## Formato de código
+
+### Nombres de variable
+
+En variables, es buena práctica usar nombres de variable que referencien su contenido.
+
+Normalmente los desarrolladores escriben variables así: `nombreUsuarioRegistrado`, utilizando las iniciales de las palabras en mayúscula, menos la primera palabra.
+
+### Comentarios
+
+Sirven para escribir algo que no queremos que la computadora ejecute como código. Hay dos formas de escribirlos:
+
+```jsx
+// Para comentarios cortos se utilizan dos barras al inicio.
+
+console.log("Hello world");
+
+/*
+Para comentarios más largos,
+se utiliza este formato,
+y se evita tener que colocar las barras,
+al inicio de cada salto de línea.
+*/
 ```
