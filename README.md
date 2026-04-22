@@ -8,3 +8,4 @@ Notes (in spanish) and exercises from Eloquent JavaScript (3rd ed.) by Marijn Ha
 |---------|-------|-----------|
 | Cap 01 - Values, Types, and Operators | ✅ | ⬜ |
 | Cap 02 - Program Structure | ✅ | 🔄 |
+| Cap 03 - Functions | ✅ | 🔄 |
